@@ -6,6 +6,10 @@ django app
 Get started
 -----------
 
+
+
+For developing at local on cross-platform, using `virtualenvwrapper <https://virtualenvwrapper.readthedocs.io/en/latest/>`_ is recommended
+
 Basic Commands
 --------------
 
