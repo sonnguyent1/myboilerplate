@@ -1,22 +1,10 @@
 django-sample
 =============
 
-django sample
+django app
 
-.. image:: https://img.shields.io/badge/built%20with-Cookiecutter%20Django-ff69b4.svg
-     :target: https://github.com/pydanny/cookiecutter-django/
-     :alt: Built with Cookiecutter Django
-
-
-:License: MIT
-
-
-Settings
---------
-
-Moved to settings_.
-
-.. _settings: http://cookiecutter-django.readthedocs.io/en/latest/settings.html
+Get started
+-----------
 
 Basic Commands
 --------------
@@ -87,7 +75,7 @@ Please note: For Celery's import magic to work, it is important *where* the cele
 Sentry
 ^^^^^^
 
-Sentry is an error logging aggregator service. You can sign up for a free account at  https://sentry.io/signup/?code=cookiecutter  or download and host it yourself.
+Sentry is an error logging aggregator service. You can sign up for a free account at  https://sentry.io/signup/ or download and host it yourself.
 The system is setup with reasonable defaults, including 404 logging and integration with the WSGI application.
 
 You must set the DSN url in production.
@@ -100,12 +88,9 @@ The following details how to deploy this application.
 
 
 
-Docker
-^^^^^^
+Docker (Unavailable)
+^^^^^^^^^^^^^^^^^^^^
 
-See detailed `cookiecutter-django Docker documentation`_.
-
-.. _`cookiecutter-django Docker documentation`: http://cookiecutter-django.readthedocs.io/en/latest/deployment-with-docker.html
 
 
 
