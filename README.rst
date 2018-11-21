@@ -8,7 +8,20 @@ Get started
 
 
 
-For developing at local on cross-platform, using `virtualenvwrapper <https://virtualenvwrapper.readthedocs.io/en/latest/>`_ is recommended
+For developing at local on cross-platform, using `virtualenvwrapper <https://virtualenvwrapper.readthedocs.io/en/latest/>`_ is recommended.
+
+setup dev environment by command:
+
+::
+
+  $ cd <project path>
+  $ mkvirtualenv -a . -r requirements/local.txt -p python3 <venv name>
+
+Make sure application configured with proper values in env files . env files located in according application environments:
+::
+
+ $ <project path>/.envs/(local|product|test)
+
 
 Basic Commands
 --------------
@@ -31,7 +44,7 @@ Running type checks with mypy:
 
 ::
 
-  $ mypy auth_service
+  $ mypy apps
 
 Test coverage
 ^^^^^^^^^^^^^
@@ -62,7 +75,7 @@ To run a celery worker:
 .. code-block:: bash
 
     cd auth_service
-    celery -A auth_service.taskapp worker -l info
+    celery -A apps.taskapp worker -l info
 
 Please note: For Celery's import magic to work, it is important *where* the celery commands are run. If you are in the same folder with *manage.py*, you should be right.
 
@@ -88,7 +101,5 @@ The following details how to deploy this application.
 
 Docker (Unavailable)
 ^^^^^^^^^^^^^^^^^^^^
-
-
 
 

@@ -6,9 +6,11 @@ import environ
 
 ROOT_DIR = environ.Path(__file__) - 3  # (apps/config/settings/base.py - 3 = apps/)
 APPS_DIR = ROOT_DIR.path('apps')
-
 env = environ.Env()
-env.read_env(str(ROOT_DIR.path('.env')))
+app_env = env('DJANGO_ENV')
+
+
+env.read_env(str(ROOT_DIR.path(f'.envs/{app_env}')))
 
 # GENERAL
 # ------------------------------------------------------------------------------
