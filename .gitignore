@@ -308,9 +308,3 @@ auth_service/media/
 
 
 .ipython/
-.env
-
-.envs/*
-
-!.envs/.local/
-

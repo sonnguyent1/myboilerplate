@@ -1,0 +1,5 @@
+DJANGO_DEBUG=True
+DATABASE_URL=psql://postgres:dn@290887@localhost/sample_django
+# DJANGO_EMAIL_BACKEND=
+# CELERY_BROKER_URL=
+# DJANGO_SECRET_KEY=
